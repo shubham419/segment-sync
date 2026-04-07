@@ -19,7 +19,7 @@ resource "segment_destination" "id-682a981ea8682d845abaf6a5" {
     region_endpoints  = null
     supported_regions = null
   }
-  name = "Facebook Pixel test"
+  name = "Facebook Pixel"
   settings = jsonencode({
     automaticConfiguration = true
     blacklistPiiProperties = []
@@ -30,8 +30,9 @@ resource "segment_destination" "id-682a981ea8682d845abaf6a5" {
     limitedDataUse         = true
     pixelId                = "1059053727807286"
     standardEvents = {
-      "Product List Viewed" = "Search"
-      "Product Viewed"      = "ViewContent"
+      "Product List Viewed"          = "Search"
+      "Product Viewed"               = "ViewContent"
+      "Toonplate Purchase Completed" = "Purchase"
     }
     standardEventsCustomProperties = []
     userIdAsExternalId             = false
