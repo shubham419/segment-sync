@@ -17,7 +17,7 @@ resource "segment_destination" "id-69d4abd165571637c49123e2" {
   }
   name = "Iterable"
   settings = jsonencode({
-    apiKey                       = ""
+    apiKey                       = "••••••••••203a"
     mapAllPagesToSingleEventName = true
     trackAllPages                = false
     trackCategorizedPages        = true
